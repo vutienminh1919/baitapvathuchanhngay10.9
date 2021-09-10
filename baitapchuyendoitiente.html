@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            background-color: steelblue;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 16px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Curency</th>
+        </tr>
+        <tr>
+            <td><input style="background-color: burlywood" type="text" id="dauvao"></td>
+            <td><select id="select1" style="width: 100px">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+            </select></td>
+            <td><select id="select2" style="width: 100px">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+            </select>
+            </td>
+    </table>
+    <button type="button" onclick="tinhtoan() ">CONVERT</button>
+    <p id="ketqua"></p>
+    <p id="ketqua1"></p>
+</form>
+<script src="baitapchuyendoitiente.js">
+
+</script>
+
+</body>
+</html>
