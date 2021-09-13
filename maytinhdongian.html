@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            padding: 6px 12px
+        }
+        input{
+            width: 185px;
+        }
+    </style>
+</head>
+<body>
+<form>
+
+    <input id="dauvao1" value=""  type="text">
+    <input id="dauvao2" value="" type="text"></br>
+    <button onclick="phepcong()" type="button">phép cộng +</button>
+    <button onclick="pheptru()" type="button">phép trừ -</button>
+    <button onclick="phepnhan()" type="button">phép nhân *</button>
+    <button onclick="phepchia()" type="button">phép chia /</button>
+    <p id="ketqua"></p>
+
+</form>
+<script>
+    function phepcong() {
+        let sothunhat = document.getElementById('dauvao1').value;
+        let a1 = parseInt(sothunhat)
+        let sothuhai = document.getElementById('dauvao2').value;
+        let b1 = parseInt(sothuhai)
+        let c1 = a1+b1
+        document.getElementById('ketqua').innerText = 'Kết quả phép cộng là '+c1
+    }
+    function pheptru(){
+        let sothunhat = document.getElementById('dauvao1').value;
+        let a2 = parseInt(sothunhat)
+        let sothuhai = document.getElementById('dauvao2').value;
+        let b2 = parseInt(sothuhai)
+        let c2 = a2-b2;
+        document.getElementById('ketqua').innerText = 'Kết quả phép trừ là '+c2
+    }
+    function phepnhan(){
+        let sothunhat = document.getElementById('dauvao1').value;
+        let a3 = parseInt(sothunhat)
+        let sothuhai = document.getElementById('dauvao2').value;
+        let b3 = parseInt(sothuhai)
+        let c3 = a3*b3;
+        document.getElementById('ketqua').innerText = 'Kết quả phép nhân là '+c3
+    }
+    function phepchia(){
+        let sothunhat = document.getElementById('dauvao1').value;
+        let a4 = parseInt(sothunhat)
+        let sothuhai = document.getElementById('dauvao2').value;
+        let b4 = parseInt(sothuhai)
+        let c4 = a4/b4;
+        document.getElementById('ketqua').innerText = 'Kết quả phép chia là '+c4
+    }
+
+
+</script>
+
+
+</body>
+</html>
